@@ -1,8 +1,21 @@
 import React, { FC, StrictMode } from 'react'
 import { hydrate, render } from 'react-dom'
 
+// router
+import { BrowserRouter as Router } from 'react-router-dom'
+
+// main app
+import App from './App'
+
+// style
+import './style/base.scss'
+
 const Root: FC = () => {
-    return <div>index</div>
+    return (
+        <Router>
+            <App />
+        </Router>
+    )
 }
 
 const RootElement = document.getElementById('root')!
