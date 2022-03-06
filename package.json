@@ -1,0 +1,69 @@
+{
+    "name": "aurora",
+    "version": "0.0.1",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "start": "webpack serve --config webpack/dev.ts",
+        "build": "webpack --config webpack/webpack.build.ts",
+        "build:watch": "webpack --config webpack/webpack.build.ts --watch",
+        "dev": "webpack --config webpack/webpack.django.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SadraTghvi/Aurora.git"
+    },
+    "keywords": [],
+    "author": "Sadra Tghvi",
+    "license": "GNU",
+    "bugs": {
+        "url": "https://github.com/SadraTghvi/Aurora/issues"
+    },
+    "homepage": "https://github.com/SadraTghvi/Aurora#readme",
+    "dependencies": {
+        "@00-team/utils": "^0.0.7",
+        "@react-icons/all-files": "^4.1.0",
+        "@redux-devtools/extension": "^3.2.2",
+        "axios": "^0.26.0",
+        "js-cookie": "^3.0.1",
+        "react": "^17.0.2",
+        "react-alert": "^7.0.3",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.6",
+        "react-router-dom": "^6.2.1",
+        "redux": "^4.1.2",
+        "redux-thunk": "^2.4.1"
+    },
+    "devDependencies": {
+        "@types/js-cookie": "^3.0.1",
+        "@types/react": "^17.0.39",
+        "@types/react-alert": "^5.2.1",
+        "@types/react-dom": "^17.0.11",
+        "@types/react-redux": "^7.1.22",
+        "autoprefixer": "^10.4.2",
+        "css-loader": "^6.6.0",
+        "html-webpack-plugin": "^5.5.0",
+        "postcss-loader": "^6.2.1",
+        "sass": "^1.49.7",
+        "sass-loader": "^12.4.0",
+        "style-loader": "^3.3.1",
+        "ts-loader": "^9.2.6",
+        "ts-node": "^10.5.0",
+        "typescript": "^4.5.5",
+        "webpack": "^5.68.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.4"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
