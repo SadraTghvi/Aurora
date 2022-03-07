@@ -1,10 +1,16 @@
 import React, { useEffect } from 'react'
 
+// router
+import { Routes, Route } from 'react-router-dom'
+
 // cookies
 // import { get as GetCookies } from 'js-cookie'
 
 // axios
 import axios from 'axios'
+
+// pages
+import Home from './pages/Home'
 
 const App = () => {
     useEffect(() => {
@@ -15,7 +21,13 @@ const App = () => {
             .then(res => console.log(res))
     }, [])
 
-    return <div>App</div>
+    return (
+        <main className='main'>
+            <Routes>
+                <Route path='/' element={<Home />} />
+            </Routes>
+        </main>
+    )
 }
 
 export default App
