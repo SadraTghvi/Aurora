@@ -66,6 +66,8 @@ db.sqlite3-journal
 databases/*
 !databases/*.py
 
+# my stuff 
+.vscode
 design.png
 
 # json files 
