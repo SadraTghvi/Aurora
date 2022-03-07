@@ -66,6 +66,8 @@ db.sqlite3-journal
 databases/*
 !databases/*.py
 
+design.png
+
 # json files 
 package-lock.json
 
