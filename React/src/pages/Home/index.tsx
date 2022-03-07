@@ -1,10 +1,10 @@
 import React from 'react'
 
-// sections
-import HeroSection from './components/HeroSection'
-
 // style
 import './style/home.scss'
+
+// sections
+import HeroSection from './components/HeroSection'
 
 const Home = () => {
     return (
