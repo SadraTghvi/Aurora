@@ -32,20 +32,19 @@
             width: 0.5%;
 
             height: 100%;
-            background-color: black;
             transform-style: preserve-3d;
 
-            background: url('https://picsum.photos/1920/1080');
+            background-image: url('https://picsum.photos/1920/1080');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
 
             &:nth-child(even) {
-                animation: ShowPictur 2s ease-in-out both;
+                animation: ShowPictur 2s ease-in-out backwards;
             }
             &:nth-child(odd) {
-                animation: ShowPicturRevert 2s ease-in-out both;
+                animation: ShowPicturRevert 2s ease-in-out backwards;
             }
         }
     }
