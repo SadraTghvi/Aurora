@@ -9,6 +9,7 @@ import App from './App'
 
 // style
 import './style/base.scss'
+import './style/fonts/imports.scss'
 
 const Root: FC = () => {
     return (
