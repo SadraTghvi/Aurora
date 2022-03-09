@@ -3,6 +3,9 @@ import React from 'react'
 // style
 import './style/herosection.scss'
 
+// icons
+import { MdKeyboardArrowRight } from '@react-icons/all-files/md/MdKeyboardArrowRight'
+
 const HeroSection = () => {
     const totalDivs = Math.ceil(innerWidth / 10)
 
@@ -53,9 +56,24 @@ const HeroSection = () => {
                         </div>
                     </span>
                 </div>
-                <div className='register-bar'>
-                    <input type='text' name='examle@gmail.com' id='' />
-                </div>
+                <span className='register-bar'>
+                    <input
+                        className='title_small'
+                        type='text'
+                        placeholder='example@gmail.com'
+                        pattern='^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$'
+                        style={{ animationDelay: '3.5s' }}
+                    />
+                    <div
+                        className='go-btn description'
+                        style={{ animationDelay: '3.5s' }}
+                    >
+                        <div className='holder '>ثبت نام</div>
+                        <div className='icon'>
+                            <MdKeyboardArrowRight size={24} />
+                        </div>
+                    </div>
+                </span>
             </div>
             <div className='scroll-down'>
                 <div className='wrapper' style={{ animationDelay: '0s' }}>
