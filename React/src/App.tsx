@@ -12,7 +12,14 @@ import axios from 'axios'
 // pages
 import Home from './pages/Home'
 
+// alert
+import { useAlert } from 'react-alert'
+
 const App = () => {
+    const alert = useAlert()
+
+    global.ReactAlert = alert
+
     useEffect(() => {
         axios
             .post('/api/test/', {
