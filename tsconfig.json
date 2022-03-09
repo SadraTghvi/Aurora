@@ -29,7 +29,7 @@
 
         "moduleResolution": "node",
         "baseUrl": "./",
-        "typeRoots": ["node_modules/@types", "./React/src/@types"],
+        "typeRoots": ["node_modules/@types", "React/src/@types"],
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "experimentalDecorators": true,
