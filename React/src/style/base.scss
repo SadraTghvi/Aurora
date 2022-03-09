@@ -1,4 +1,5 @@
 @use 'config' as g;
+@use 'theme';
 
 * {
     margin: 0;
@@ -19,6 +20,8 @@ body {
     overflow-x: overlay;
     position: relative;
     font-family: 'IranSans';
+
+    @include theme.light;
 
     .root {
         overflow: hidden;
@@ -61,4 +64,9 @@ body {
 
 .description {
     font-size: g.$DESCRIPTION_FONT_SIZE;
+}
+
+.icon {
+    display: grid;
+    place-items: center;
 }
