@@ -1,0 +1,12 @@
+@mixin light {
+    color-scheme: light;
+
+    --primary-color: #f2f2f2;
+    --accent-color: #1a1a1a;
+    --description-color: #eee;
+    --other-color: #ddd;
+
+    --sixty-percent-color: #845ec2;
+    --thirty-percent-color: #ff9671;
+    --ten-percent-color: #ffff00;
+}
