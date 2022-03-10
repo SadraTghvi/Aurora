@@ -7,12 +7,12 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 5vh;
+    grid-row-gap: 3vh;
 
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 
-    padding: 1rem;
+    padding: 1rem 2rem;
 
     .new-movies-header {
         background-image: url('https://picsum.photos/1920/1080');
@@ -20,24 +20,80 @@
         background-repeat: no-repeat;
         background-position: center;
 
+        border-radius: 10px;
+
         grid-area: 1 / 1 / 2 / 6;
 
         aspect-ratio: 4/1;
+        width: 80%;
 
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+        }
         @media screen and (max-width: 768px) {
+            width: 100%;
             aspect-ratio: 4/2;
         }
     }
     .new-movies-column-container {
         width: 100%;
         height: 100%;
-        background: grey;
         grid-area: 2 / 1 / 3 / 5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        row-gap: 3vh;
+        column-gap: 3vw;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .new-movies-column {
+            width: 50%;
+            height: 100%;
+
+            background-image: url('https://picsum.photos/1920/1080');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            border-radius: 10px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
     }
     .new-movies-slider {
         width: 100%;
         height: 100%;
         background: red;
         grid-area: 3 / 1 / 4 / 5;
+    }
+
+    .glow-animation {
+        position: relative;
+        overflow: hidden;
+
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            bottom: 110%;
+            right: 0;
+            opacity: 0.3;
+            background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+            transition: bottom 0.7s ease-in-out;
+        }
+
+        &:hover::after {
+            bottom: -110%;
+        }
     }
 }
