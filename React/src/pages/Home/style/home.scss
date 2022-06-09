@@ -7,4 +7,16 @@
     min-height: 500vh;
 
     width: 100%;
+
+    .header-wrapper span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+
+        svg {
+            fill: #ff6700;
+            color: #ff6700;
+        }
+    }
 }
