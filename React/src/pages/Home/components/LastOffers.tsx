@@ -5,6 +5,7 @@ import './style/LastOffers.scss'
 
 // icons
 import { RiShoppingCart2Fill } from '@react-icons/all-files/ri/RiShoppingCart2Fill'
+import { MdLocalOffer } from '@react-icons/all-files/md/MdLocalOffer'
 
 // utils
 import UnderlineText from '../../../components/UnderlineText'
@@ -64,13 +65,13 @@ const LastOffers = () => {
                 <div className='header-wrapper'>
                     <UnderlineText threshold={1}>
                         <div className='icon'>
-                            <RiShoppingCart2Fill />
+                            <MdLocalOffer />
                         </div>
                         <div className='holder title'>
                             پیشنهاد های شگفت انگیز
                         </div>
                         <div className='icon'>
-                            <RiShoppingCart2Fill />
+                            <MdLocalOffer />
                         </div>
                     </UnderlineText>
                 </div>
