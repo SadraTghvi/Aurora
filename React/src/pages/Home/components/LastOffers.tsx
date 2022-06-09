@@ -60,9 +60,9 @@ const LastOffers = () => {
         }
     }, [ProductBody])
     return (
-        <div className='new-products' id='new-products'>
+        <section className='new-products' id='new-products'>
             <div className='products-header'>
-                <div className='header-wrapper'>
+                <div className='header-wrapper section_title'>
                     <UnderlineText threshold={1}>
                         <div className='icon'>
                             <MdLocalOffer />
@@ -121,7 +121,7 @@ const LastOffers = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
@@ -140,7 +140,7 @@ const ProductHeadCart = () => {
                     </div>
                 </div>
                 <div className='buy_btn' tabIndex={1}>
-                    <RiShoppingCart2Fill size={30} color='white' />
+                    <RiShoppingCart2Fill size={35} color='white' />
                 </div>
             </div>
         </div>
