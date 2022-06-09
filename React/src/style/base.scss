@@ -19,7 +19,7 @@ body {
 body {
     overflow-x: overlay;
     position: relative;
-    font-family: 'IranSans';
+    font-family: 'Vazir', 'IranSans';
 
     @include theme.light;
 
@@ -69,4 +69,9 @@ body {
 .icon {
     display: grid;
     place-items: center;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
 }
