@@ -5,13 +5,13 @@ import './style/home.scss'
 
 // sections
 import HeroSection from './components/HeroSection'
-import NewMovies from './components/NewMovies'
+import LastOffers from './components/LastOffers'
 
 const Home = () => {
     return (
         <main className='home'>
             <HeroSection />
-            <NewMovies />
+            <LastOffers />
         </main>
     )
 }
