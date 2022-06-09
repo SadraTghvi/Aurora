@@ -14,8 +14,6 @@ import HtmlWP from 'html-webpack-plugin'
 // base configs
 import Main from './main'
 
-const BACKEND = 'http://localhost:8000'
-
 const DevConfig = {
     ...Main,
     mode: 'development',
@@ -41,13 +39,6 @@ const DevConfig = {
         client: {
             logging: 'none',
             reconnect: 7,
-        },
-        proxy: {
-            '/api': BACKEND,
-            '/m': BACKEND,
-            '/s': BACKEND,
-            '/favicon.ico': BACKEND,
-            '/admin': BACKEND,
         },
     },
 }
