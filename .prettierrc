@@ -9,10 +9,23 @@
     "arrowParens": "avoid",
     "overrides": [
         {
-            "files": ["*.jsonc"],
+            "files": ["*.jsonc", "*.yml"],
             "options": {
                 "tabWidth": 2
             }
         }
+    ],
+
+    "importOrderSeparation": true,
+    "importOrder": [
+        "(^react$|^react-dom)",
+        "^@00-team/utils",
+        "^@react-icons",
+        "<THIRD_PARTY_MODULES>",
+        "^(state|jotai)",
+        "(/?comps/|/?components/)",
+        "\\./(?!style)",
+        "/style/",
+        "(/static/|^static)"
     ]
 }
