@@ -70,6 +70,8 @@ databases/*
 .vscode
 design.png
 
+static/
+
 # json files 
 package-lock.json
 
