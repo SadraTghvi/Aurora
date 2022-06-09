@@ -133,7 +133,10 @@ const ProductHeadCart = () => {
             <div className='head-description'>
                 <div className='description '>
                     <div className='title_smaller'>فلاکس چای صندوق دار</div>
-                    <div className='price title_small'>125,215,000</div>
+                    <div className='price title_small'>
+                        <div className='holder'>125,215,000</div>
+                        <div className='icon'>تومان</div>
+                    </div>
                 </div>
                 <div className='buy_btn' tabIndex={1}>
                     <RiShoppingCart2Fill size={30} color='white' />
@@ -150,9 +153,14 @@ const ProductBodyCart = () => {
             <div className='body-description'>
                 <div className='description'>
                     <div className='title_smaller'>فلاکس چای صندوق دار</div>
-                    <div className='price'>125,215,000</div>
+                    <div className='price'>
+                        <div className='holder'>125,215,000</div>
+                        <div className='icon'>تومان</div>
+                    </div>
                 </div>
-                <div className='buy-btn'></div>
+                <div className='buy_btn' tabIndex={1}>
+                    <RiShoppingCart2Fill size={30} color='white' />
+                </div>
             </div>
         </div>
     )
