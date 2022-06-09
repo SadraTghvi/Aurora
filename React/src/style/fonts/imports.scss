@@ -15,3 +15,12 @@
 
 // Lalezar
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+// numbers
+@font-face {
+    font-family: 'Vazir';
+    src: url('./vazir/Vazir.eot'), url('./vazir/Vazir.woff2') format('woff2'),
+        url('./vazir/Vazir.ttf') format('truetype'),
+        url('./vazir/Vazir.woff') format('woff');
+    unicode-range: U+0030-0039, U+0660-0669;
+}
