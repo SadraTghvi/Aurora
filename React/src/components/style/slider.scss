@@ -1,0 +1,106 @@
+.slider-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 60vh;
+
+    position: relative;
+
+    .buttons {
+        position: absolute;
+        width: 100%;
+
+        z-index: 3;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .prev,
+        .next {
+            cursor: pointer;
+
+            display: grid;
+            place-items: center;
+
+            svg {
+                padding: 5px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+
+        .prev {
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: translateX(-30%);
+            }
+        }
+        .next {
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: translateX(30%);
+            }
+        }
+    }
+
+    .slider-wrapper {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .productcard-container {
+        width: 100%;
+        max-width: 370px;
+        height: 630px;
+
+        z-index: -1;
+
+        position: absolute;
+
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out, opacity 0.1s ease-in-out;
+
+        opacity: 0;
+        &.before-previous {
+            z-index: 1;
+            transform: translateX(-250%) scale(0.7);
+            opacity: 1;
+        }
+        &.previous {
+            z-index: 1;
+            transform: translateX(-150%) scale(0.85);
+            opacity: 1;
+        }
+        &.current {
+            z-index: 2;
+            opacity: 1;
+        }
+        &.next {
+            z-index: 1;
+            transform: translateX(150%) scale(0.85);
+            opacity: 1;
+            cursor: pointer;
+        }
+        &.after-next {
+            z-index: 1;
+            transform: translateX(250%) scale(0.7);
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
