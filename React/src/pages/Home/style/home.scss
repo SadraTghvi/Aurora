@@ -19,4 +19,81 @@
             color: #ff6700;
         }
     }
+    .buy_btn {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        width: 15%;
+        background: #ff6700;
+        cursor: pointer;
+
+        overflow: hidden;
+
+        &:hover {
+            svg {
+                animation: buy-btn-hover 0.5s steps(5);
+            }
+            @keyframes buy-btn-hover {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                25% {
+                    transform: rotate(-20deg);
+                }
+                50% {
+                    transform: rotate(20deg);
+                }
+
+                75% {
+                    transform: rotate(-20deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        &:focus {
+            svg {
+                animation: buy-btn-focus 2s cubic-bezier(0.63, 0.01, 0.21, 0.99);
+            }
+            @keyframes buy-btn-focus {
+                0% {
+                    transform: translate(0, 0) rotate(-20deg);
+                }
+
+                15% {
+                    transform: translate(-10px, 0);
+                }
+
+                25% {
+                    transform: translate(100px, 0);
+                }
+
+                50% {
+                    transform: translate(100px, 100px);
+                }
+
+                75% {
+                    transform: translate(-100px, 100px);
+                }
+
+                85% {
+                    transform: translate(-100px, 0);
+                }
+
+                90% {
+                    transform: translate(-10px, 0) rotate(20deg);
+                }
+                95% {
+                    transform: translate(-5px, 0) rotate(25deg);
+                }
+
+                100% {
+                    transform: translate(0, 0) rotate(0deg);
+                }
+            }
+        }
+    }
 }
