@@ -34,14 +34,20 @@ const HeroSection = () => {
                         className='title_hero'
                         style={{ animationDelay: '2.5s' }}
                     >
-                        بی نهایت فیلم و سریال در گوشی، لب تاب و کامپیتور شما
+                        پرواز{' '}
+                    </div>
+                    <div
+                        className='title_hero'
+                        style={{ animationDelay: '2.75s' }}
+                    >
+                        نوعی متفاوت از فروشگاه هایی که دیده اید
                     </div>
                 </span>
                 <div className='paragraph'>
                     <span className='animation-fade'>
                         <div
                             className='title_small'
-                            style={{ animationDelay: '2.75s' }}
+                            style={{ animationDelay: '3s' }}
                         >
                             هرجا که هستید با هر دستگاهی که هستید
                         </div>
@@ -49,7 +55,7 @@ const HeroSection = () => {
                     <span className='animation-fade'>
                         <div
                             className='title_smaller'
-                            style={{ animationDelay: '3s' }}
+                            style={{ animationDelay: '3.25s' }}
                         >
                             آماده اید؟ ایمیل خود را وارید کنید تا عضویت خود را
                             شروع کنید
@@ -62,11 +68,11 @@ const HeroSection = () => {
                         type='text'
                         placeholder='example@gmail.com'
                         pattern='^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$'
-                        style={{ animationDelay: '3.5s' }}
+                        style={{ animationDelay: '3.75s' }}
                     />
                     <div
                         className='go-btn description'
-                        style={{ animationDelay: '3.5s' }}
+                        style={{ animationDelay: '3.75s' }}
                     >
                         <div className='holder '>ثبت نام</div>
                         <div className='icon'>
@@ -75,7 +81,7 @@ const HeroSection = () => {
                     </div>
                 </span>
             </div>
-            <div className='scroll-down'>
+            <a className='scroll-down' href='#new-products'>
                 <div className='wrapper' style={{ animationDelay: '0s' }}>
                     <span></span>
                 </div>
@@ -85,7 +91,7 @@ const HeroSection = () => {
                 <div className='wrapper' style={{ animationDelay: '0.3s' }}>
                     <span></span>
                 </div>
-            </div>
+            </a>
         </section>
     )
 }
