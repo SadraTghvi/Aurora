@@ -6,9 +6,6 @@ import { Routes, Route } from 'react-router-dom'
 // cookies
 // import { get as GetCookies } from 'js-cookie'
 
-// axios
-import axios from 'axios'
-
 // pages
 import Home from './pages/Home'
 
@@ -24,14 +21,6 @@ const App = () => {
     const alert = useAlert()
 
     global.ReactAlert = alert
-
-    useEffect(() => {
-        axios
-            .post('/api/test/', {
-                name: 'test',
-            })
-            .then(res => console.log(res))
-    }, [])
 
     useEffect(() => {
         window.onscroll = () => {
