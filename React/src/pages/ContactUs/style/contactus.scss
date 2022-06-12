@@ -1,0 +1,22 @@
+.contact-container {
+    width: 100%;
+    height: auto;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .contact-wrapper {
+        width: 100%;
+        height: 100vh;
+
+        background: linear-gradient(
+            -30deg,
+            #44a5ac,
+            var(--mid-melon-color-ing-g)
+        );
+    }
+}

@@ -1,0 +1,317 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 95vh;
+
+    position: relative;
+
+    .background-img {
+        position: absolute;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .titles_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 3vh;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        z-index: 2;
+
+        .icons-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2vw;
+
+            margin-top: 4vh;
+
+            .social-btn {
+                z-index: 1;
+                background: transparent;
+                border: none;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover {
+                    transform: translateY(-5px) scale(1.05);
+
+                    &::after {
+                        width: 75px;
+                        height: 45px;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 2;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-40%, -65%);
+                    width: 70px;
+                    height: 40px;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                }
+
+                .fab {
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 4.5em;
+                    color: #fff;
+                    text-shadow: -2px -1px 2px rgba(0, 0, 0, 1);
+                }
+                .tooltip {
+                    position: absolute;
+                    top: 0;
+                    z-index: 3;
+                    background: #fff;
+                    color: black;
+                    padding: 10px 18px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border-radius: 25px;
+                    opacity: 0;
+                    pointer-events: none;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+                    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        height: 15px;
+                        width: 15px;
+                        background: #fff;
+                        left: 50%;
+                        bottom: -6px;
+                        transform: translateX(-50%) rotate(45deg);
+                        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    }
+                }
+
+                &:hover .tooltip {
+                    top: -70px;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                &:hover span {
+                    color: black;
+                }
+                &:hover span,
+                &:hover .tooltip {
+                    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+                }
+
+                &.instagram {
+                    &::before {
+                        background: linear-gradient(
+                                to bottom,
+                                rgba(255, 255, 255, 0.1),
+                                rgba(0, 0, 0, 0.1)
+                            ),
+                            linear-gradient(
+                                180deg,
+                                #f99257 0%,
+                                #e42d59 25%,
+                                #bb2d93 65%,
+                                #7738c5 100%
+                            );
+                    }
+                    &::after {
+                        filter: blur(9px);
+                        background: radial-gradient(
+                            #fff 20%,
+                            #bb2d93 50%,
+                            #7738c5 80%
+                        );
+                        box-shadow: 0 0 10px rgba(#7738c5, 0.5);
+                    }
+                }
+
+                &.gmail {
+                    &::before {
+                        background: linear-gradient(
+                                to bottom,
+                                rgba(255, 255, 255, 0.2),
+                                rgba(#bd081c, 0.8)
+                            ),
+                            #bd081c;
+                    }
+                    &::after {
+                        filter: blur(9px);
+                        background: radial-gradient(#fff 20%, #bd081c 50%);
+                        box-shadow: 0 0 10px rgba(#bd081c, 0.5);
+                    }
+                }
+
+                &.snapchat {
+                    &::before {
+                        background: linear-gradient(
+                                to bottom,
+                                rgba(255, 255, 255, 0.2),
+                                rgba(#000, 0.15)
+                            ),
+                            #fffc00;
+                    }
+                    &::after {
+                        filter: blur(9px);
+                        background: radial-gradient(
+                                transparent,
+                                rgba(#000, 0.05)
+                            ),
+                            radial-gradient(#fff 20%, #fffc00 50%);
+                        box-shadow: 0 0 10px rgba(#fffc00, 1);
+                    }
+                }
+
+                &.telegram {
+                    &::before {
+                        background: linear-gradient(
+                                to bottom,
+                                rgba(255, 255, 255, 0.2),
+                                rgba(#000, 0.15)
+                            ),
+                            #08a0e9;
+                    }
+                    &::after {
+                        filter: blur(9px);
+                        background: radial-gradient(#fff 20%, #08a0e9 50%);
+                        box-shadow: 0 0 10px rgba(#08a0e9, 1);
+                    }
+                }
+
+                &.phone {
+                    &::before {
+                        background: linear-gradient(
+                                to bottom,
+                                rgb(36, 36, 36),
+                                rgba(#000, 0.15)
+                            ),
+                            #242424;
+                    }
+                    &::after {
+                        filter: blur(9px);
+                        background: radial-gradient(#fff 20%, #242424 50%);
+                        box-shadow: 0 0 10px rgba(#242424, 1);
+                    }
+                }
+
+                &.whatsapp {
+                    &::before {
+                        background: linear-gradient(
+                                to bottom,
+                                rgba(255, 255, 255, 0.2),
+                                rgba(#000, 0.2)
+                            ),
+                            linear-gradient(-35deg, #69c9d0 30%, #1dee40 75%);
+                    }
+                    &::after {
+                        filter: blur(7px);
+                        background: radial-gradient(
+                            #fff 20%,
+                            #2cd134 50%,
+                            #0fdd54 70%
+                        );
+                        box-shadow: 0 0 10px rgba(#69c9d0, 0.5);
+                    }
+                }
+            }
+
+            .instagram:hover span,
+            .instagram:hover .tooltip,
+            .instagram:hover .tooltip:before {
+                background: #3b5999;
+            }
+
+            .telegram:hover span,
+            .telegram:hover .tooltip,
+            .telegram:hover .tooltip:before {
+                background: #46c1f6;
+            }
+
+            .instagram:hover span,
+            .instagram:hover .tooltip,
+            .instagram:hover .tooltip:before {
+                background: #f99257;
+            }
+
+            .phone:hover span,
+            .phone:hover .tooltip,
+            .phone:hover .tooltip:before {
+                background: #636363;
+            }
+
+            .whatsapp:hover span,
+            .whatsapp:hover .tooltip,
+            .whatsapp:hover .tooltip:before {
+                background: #27eb62;
+            }
+
+            .gmail:hover span,
+            .gmail:hover .tooltip,
+            .gmail:hover .tooltip:before {
+                background: #b6423b;
+            }
+
+            .social__list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .social__item {
+                padding: 30px;
+
+                animation: fadeIn 0.7s cubic-bezier(0.52, 1.64, 0.1, 0.74)
+                    forwards;
+
+                transform: translateY(300%);
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateY(0);
+    }
+}
