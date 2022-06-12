@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 
 // pages
 import Home from './pages/Home'
+import ContactUs from './pages/ContactUs'
 
 // layouts
 import Navbar from './layouts/Navbar'
@@ -34,6 +35,7 @@ const App = () => {
             <main className='main'>
                 <Routes>
                     <Route path='/' element={<Home />} />
+                    <Route path='/contact-us' element={<ContactUs />} />
                 </Routes>
             </main>
             <Footer />
