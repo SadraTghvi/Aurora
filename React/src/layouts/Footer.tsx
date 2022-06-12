@@ -25,19 +25,22 @@ const Footer = () => {
                     </div>
                     <div className='footer-link-items'>
                         <h2>ارتباط با ما</h2>
-                        <Link className='links' to='/#contact'>
+                        <Link className='links' to='/contact-us'>
+                            ارتباط با ما
+                        </Link>
+                        <Link className='links' to='/'>
                             لینک صفحات مجازی
                         </Link>
-                        <Link className='links' to='/#contact'>
+                        <Link className='links' to='/'>
                             ارتباط حضوری
                         </Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>محصولات ما</h2>
-                        <Link className='links' to='/courses'>
+                        <Link className='links' to='/'>
                             اخرین محصولات
                         </Link>
-                        <Link className='links' to='/courses'>
+                        <Link className='links' to='/'>
                             همه&zwnj;ی محصولات
                         </Link>
                     </div>
