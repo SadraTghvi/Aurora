@@ -1,4 +1,4 @@
-.section-title {
+.section_title {
     // font-family: 'Shizuru', cursive;
 
     display: flex;
@@ -10,12 +10,22 @@
 
     overflow: hidden;
     span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+
+        svg {
+            fill: #ff6700;
+            color: #ff6700;
+        }
+
         opacity: 0;
         transform: translateY(115%);
 
         text-transform: capitalize;
 
-        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
     }
 
     &::after {
@@ -26,7 +36,7 @@
         height: 2px;
         background-color: #ff6700;
 
-        transition: width 0.5s 1s ease-in-out;
+        transition: width 0.7s 1s cubic-bezier(0.52, 1.64, 0.07, 0.75);
     }
 
     &.shown::after {
