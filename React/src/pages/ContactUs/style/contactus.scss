@@ -10,12 +10,22 @@
     align-items: center;
 
     .contact-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        gap: 10vh;
+
         width: 100%;
         height: 100vh;
 
+        padding: 4vh 3vw;
+
         background: linear-gradient(
-            -30deg,
-            #44a5ac,
+            30deg,
+            var(--melon-color-ing-g),
+            var(--melon-color-ing-g),
             var(--mid-melon-color-ing-g)
         );
     }
