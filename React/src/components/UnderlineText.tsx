@@ -40,7 +40,7 @@ const UnderlineText: FC<UnderlineTextProps> = ({
     }, [LazyRef])
     return (
         <div
-            className={`section-title title ${isIntersecting ? 'shown' : ''}`}
+            className={`section_title title ${isIntersecting ? 'shown' : ''}`}
             ref={LazyRef}
         >
             <span>{children}</span>
