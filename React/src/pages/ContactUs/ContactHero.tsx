@@ -57,7 +57,7 @@ const ContactHero = () => {
                             <button className='social-btn instagram'>
                                 <div className='tooltip'>@sadra_tqvi</div>
                                 <a
-                                    href='https://www.instagram.com/mahmoodrezarizband25/'
+                                    href='https://www.instagram.com//'
                                     target='_blank'
                                 >
                                     <AiOutlineInstagram className='fab' />
@@ -67,6 +67,17 @@ const ContactHero = () => {
                     </ul>
                 </div>
             </div>
+            <a className='scroll-down' href='#'>
+                <div className='wrapper' style={{ animationDelay: '0s' }}>
+                    <span></span>
+                </div>
+                <div className='wrapper' style={{ animationDelay: '0.15s' }}>
+                    <span></span>
+                </div>
+                <div className='wrapper' style={{ animationDelay: '0.3s' }}>
+                    <span></span>
+                </div>
+            </a>
         </div>
     )
 }
