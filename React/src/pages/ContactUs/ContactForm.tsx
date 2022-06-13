@@ -23,7 +23,6 @@ const ContactForm = () => {
                     </label>
 
                     <input
-                        autoFocus
                         id='name'
                         placeholder=''
                         type='tel'
