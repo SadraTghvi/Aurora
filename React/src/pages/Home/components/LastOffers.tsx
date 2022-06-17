@@ -9,6 +9,7 @@ import { MdLocalOffer } from '@react-icons/all-files/md/MdLocalOffer'
 
 // utils
 import UnderlineText from '../../../components/UnderlineText'
+import { Link } from 'react-router-dom'
 
 const LastOffers = () => {
     const ProductHeader = useRef<HTMLDivElement>(null)
@@ -139,9 +140,9 @@ const ProductHeadCart = () => {
                         <div className='icon'>تومان</div>
                     </div>
                 </div>
-                <div className='buy_btn' tabIndex={1}>
+                <Link to={'/product'} className='buy_btn' tabIndex={1}>
                     <RiShoppingCart2Fill size={35} color='white' />
-                </div>
+                </Link>
             </div>
         </div>
     )
@@ -159,9 +160,9 @@ const ProductBodyCart = () => {
                         <div className='icon'>تومان</div>
                     </div>
                 </div>
-                <div className='buy_btn' tabIndex={1}>
+                <Link to={'/product'} className='buy_btn' tabIndex={1}>
                     <RiShoppingCart2Fill size={30} color='white' />
-                </div>
+                </Link>
             </div>
         </div>
     )
