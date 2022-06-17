@@ -1,14 +1,12 @@
 .product-show {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 1vh;
 
     width: 30%;
     height: 100%;
-
-    padding: 0.5rem;
 
     .main-img {
         aspect-ratio: 1/1;
