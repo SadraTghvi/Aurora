@@ -22,12 +22,12 @@ const Product = () => {
         <div className='product-container'>
             <div className='product-wrapper'>
                 <div className='product-info'></div>
+                <ProductShow
+                    MainImg={MainImg}
+                    setMainImg={setMainImg}
+                    imgs={imgs}
+                />
             </div>
-            <ProductShow
-                MainImg={MainImg}
-                setMainImg={setMainImg}
-                imgs={imgs}
-            />
         </div>
     )
 }
