@@ -28,7 +28,7 @@ const Navbar: FC<NavbarProps> = ({ scrollTop }) => {
         <div className={`navbar ${Active ? 'active' : ''}`}>
             <ul className='menu'>
                 <li>
-                    <a href='#' className='title_small'>
+                    <a href='/' className='title_small'>
                         <div className='holder'>خانه</div>
                         <div className='icon'>
                             <div className='before'>
@@ -41,7 +41,7 @@ const Navbar: FC<NavbarProps> = ({ scrollTop }) => {
                     </a>
                 </li>
                 <li>
-                    <a href='#videos' className='title_small'>
+                    <a href='/#videos' className='title_small'>
                         <div className='holder'> محصولات </div>
                         <div className='icon'>
                             <div className='before'>
@@ -54,7 +54,7 @@ const Navbar: FC<NavbarProps> = ({ scrollTop }) => {
                     </a>
                 </li>
                 <li>
-                    <a href='#about' className='title_small'>
+                    <a href='/#about' className='title_small'>
                         <div className='holder'>درباره ما</div>
                         <div className='icon'>
                             <div className='before'>
@@ -67,7 +67,7 @@ const Navbar: FC<NavbarProps> = ({ scrollTop }) => {
                     </a>
                 </li>
                 <li>
-                    <a href='#contact' className='title_small'>
+                    <a href='/#contact' className='title_small'>
                         <div className='holder'> تماس با ما </div>
                         <div className='icon'>
                             <div className='before'>
