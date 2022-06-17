@@ -22,12 +22,13 @@ const Product = () => {
     return (
         <div className='product-container'>
             <div className='product-wrapper'>
+                <ProdcutInfo />
+
                 <ProductShow
                     MainImg={MainImg}
                     setMainImg={setMainImg}
                     imgs={imgs}
                 />
-                <ProdcutInfo />
             </div>
         </div>
     )
