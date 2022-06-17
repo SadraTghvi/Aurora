@@ -16,6 +16,7 @@ import Footer from './layouts/Footer'
 
 // alert
 import { useAlert } from 'react-alert'
+import Product from './pages/Product'
 
 const App = () => {
     const [ScrollTop, setScrollTop] = useState(0)
@@ -36,6 +37,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/contact-us' element={<ContactUs />} />
+                    <Route path='/product' element={<Product />} />
                 </Routes>
             </main>
             <Footer />
