@@ -71,7 +71,7 @@ const ProdcutInfo = () => {
                     </div>
                 </div>
             </div>
-            <div className='product-buy column'>
+            <div className='product-buy column title_small'>
                 <div className='buy-column'>
                     <div className='icon'>
                         <GiReceiveMoney size={24} />
@@ -90,7 +90,9 @@ const ProdcutInfo = () => {
                     </div>
                     <div className='holder'>امکان بازگشت وجه تا یک هفته</div>
                 </div>
-                <div className='buy-btn'></div>
+                <div className='buy-btn title_small'>
+                    <button>اضافه به سبد خرید</button>
+                </div>
             </div>
         </div>
     )
