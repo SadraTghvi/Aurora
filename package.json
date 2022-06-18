@@ -5,9 +5,8 @@
     "main": "",
     "scripts": {
         "start": "webpack serve --config webpack/dev.ts",
-        "build": "webpack --config webpack/webpack.build.ts",
-        "build:watch": "webpack --config webpack/webpack.build.ts --watch",
-        "dev": "webpack --config webpack/webpack.django.ts"
+        "build": "webpack --config webpack/build.ts",
+        "build:watch": "webpack --config webpack/build.ts --watch"
     },
     "repository": {
         "type": "git",
@@ -24,6 +23,7 @@
         "@00-team/utils": "^0.0.7",
         "@react-icons/all-files": "^4.1.0",
         "@redux-devtools/extension": "^3.2.2",
+        "firebase": "^9.8.3",
         "js-cookie": "^3.0.1",
         "react": "^17.0.2",
         "react-alert": "^7.0.3",

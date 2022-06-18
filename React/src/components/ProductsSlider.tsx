@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 // style
 import './style/slider.scss'
@@ -56,9 +56,6 @@ const ProductsSlider = () => {
         else return ''
     }
 
-    useEffect(() => {
-        console.log(ActiveProduc)
-    }, [ActiveProduc])
     return (
         <div className='slider-container'>
             <div className='slider-wrapper'>

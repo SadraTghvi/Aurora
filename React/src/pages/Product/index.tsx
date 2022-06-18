@@ -13,7 +13,6 @@ var imgs: string[] = []
 
 Array.from(Array(4).keys()).map((_, index) => {
     let img = require(`../../../../static/imgs/product-show${index}.jpg`)
-    console.log(img)
 
     imgs.push(img)
 })

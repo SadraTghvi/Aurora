@@ -4,7 +4,12 @@ import { Configuration } from 'webpack'
 // styles
 import { BuildStyle } from './config/style'
 
-import HtmlFiles from './config/django-html'
+// plugins
+import HtmlWP from 'html-webpack-plugin'
+
+// path
+import { resolve } from 'path'
+import { APP_DIR, PUBLIC_DIR } from './config/path'
 
 // Main configs
 import Main from './main'
@@ -15,7 +20,15 @@ const BuildConfig: Configuration = {
     module: {
         rules: [...Main.module!.rules!, BuildStyle],
     },
-    plugins: [...Main.plugins!, ...HtmlFiles],
+    plugins: [
+        ...Main.plugins!,
+        new HtmlWP({
+            filename: resolve(PUBLIC_DIR, 'index.html'),
+            template: resolve(APP_DIR, 'template/index.html'),
+            inject: true,
+            publicPath: '/dist/',
+        }),
+    ],
     optimization: {
         emitOnErrors: false,
         chunkIds: 'deterministic',
