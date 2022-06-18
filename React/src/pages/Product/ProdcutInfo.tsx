@@ -13,6 +13,7 @@ import { IoShieldCheckmarkSharp } from '@react-icons/all-files/io5/IoShieldCheck
 import { GiReceiveMoney } from '@react-icons/all-files/gi/GiReceiveMoney'
 import { BiSupport } from '@react-icons/all-files/bi/BiSupport'
 import { IoIosCash } from '@react-icons/all-files/io/IoIosCash'
+import { FaClipboardCheck } from '@react-icons/all-files/fa/FaClipboardCheck'
 
 const ProdcutInfo = () => {
     return (
@@ -89,6 +90,12 @@ const ProdcutInfo = () => {
                         <IoIosCash size={24} />
                     </div>
                     <div className='holder'>امکان بازگشت وجه تا یک هفته</div>
+                </div>
+                <div className='buy-column'>
+                    <div className='icon'>
+                        <FaClipboardCheck size={24} />
+                    </div>
+                    <div className='holder'>اطمینان از اصالت کالا </div>
                 </div>
                 <div className='buy-btn title_small'>
                     <button>اضافه به سبد خرید</button>
