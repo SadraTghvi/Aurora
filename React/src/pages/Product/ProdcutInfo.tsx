@@ -10,11 +10,14 @@ import { MdSentimentVerySatisfied } from '@react-icons/all-files/md/MdSentimentV
 import { FaCalendarCheck } from '@react-icons/all-files/fa/FaCalendarCheck'
 import { IoShieldCheckmarkSharp } from '@react-icons/all-files/io5/IoShieldCheckmarkSharp'
 
+import { GiReceiveMoney } from '@react-icons/all-files/gi/GiReceiveMoney'
+import { BiSupport } from '@react-icons/all-files/bi/BiSupport'
+import { IoIosCash } from '@react-icons/all-files/io/IoIosCash'
+
 const ProdcutInfo = () => {
     return (
         <div className='product-info-wrapper'>
-            <div className='product-buy'></div>
-            <div className='product-info'>
+            <div className='product-info column'>
                 <div className='info-name title_small'>
                     ساعت مچی عقربه‌ای مردانه تگ هویر مدل CAL5111.FC6299
                 </div>
@@ -67,6 +70,27 @@ const ProdcutInfo = () => {
                         <div className='answer'>چرم طبیعی</div>
                     </div>
                 </div>
+            </div>
+            <div className='product-buy column'>
+                <div className='buy-column'>
+                    <div className='icon'>
+                        <GiReceiveMoney size={24} />
+                    </div>
+                    <div className='holder'>ضمــانــت بـازگــشــت وجــه</div>
+                </div>
+                <div className='buy-column'>
+                    <div className='icon'>
+                        <BiSupport size={24} />
+                    </div>
+                    <div className='holder'>پشتیبانی و ارتباط 24 ساعته</div>
+                </div>
+                <div className='buy-column'>
+                    <div className='icon'>
+                        <IoIosCash size={24} />
+                    </div>
+                    <div className='holder'>امکان بازگشت وجه تا یک هفته</div>
+                </div>
+                <div className='buy-btn'></div>
             </div>
         </div>
     )
