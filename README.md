@@ -1,2 +1,2 @@
 # Aurora
-Aurora is a movies, series generator site
+Aurora is an E-Commerce site built with React and Scss mainly.
